@@ -14,9 +14,9 @@
       rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,15 +28,26 @@
           Cool &nbsp; Purety &nbsp; Freshness
         </div>
       </div>
-      <div class="icons">
-        <input type="text" type="search" />
-        <button><i class="bx bx-search"></i></button>
+      <div class="search-container">
+        <input type="text" placeholder="Search your Favourite..." />
+        <button><i class="bx bxs-search"></i></button>
       </div>
       <nav>
         <a href="#">Dispenser</a>
         <a href="#">Water Chiller</a>
         <a href="#">Sale</a>
-        <div class="icon-btn">Login</div>
+        <div class="login-container">
+          <div class="icon-btn" id="loginBtn">
+            Login <i class="bx bx-chevron-down"></i>
+          </div>
+          <div class="login-dropdown" id="loginDropdown">
+            <form id="loginForm">
+              <input type="text" placeholder="Email or Username" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
       </nav>
       <div class="cart-icon" onclick="toggleCartDropdown()">
         <i class="bx bx-shopping-bag"></i>
@@ -55,16 +66,24 @@
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide hero-card">
-              <img src="image/504163614_122093376410908929_6649563100597291277_n.jpg" alt="hero1" />
+              <img
+                src="image/504163614_122093376410908929_6649563100597291277_n.jpg"
+                alt="hero1"
+              />
               <div class="hero-content">
                 <h1 class="hero-title">HYDRO COOL WATER COOLER</h1>
-                <p class="hero-sub">Best Model Design On Stainless Steel Body</p>
+                <p class="hero-sub">
+                  Best Model Design On Stainless Steel Body
+                </p>
                 <a class="hero-cta" href="#">Shop Now</a>
               </div>
             </div>
             <!-- Slide 2 -->
             <div class="swiper-slide hero-card">
-              <img src="image/504163614_122093376410908929_6649563100597291277_n.jpg" alt="hero2" />
+              <img
+                src="image/504163614_122093376410908929_6649563100597291277_n.jpg"
+                alt="hero2"
+              />
               <div class="hero-content">
                 <h1 class="hero-title">PURE & FRESH WATER</h1>
                 <p class="hero-sub">Stay Cool with Our Water Coolers</p>
@@ -80,7 +99,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-<!-- swiper end -->
+      <!-- swiper end -->
       <section class="section">
         <h2>NEW COLLECTION</h2>
         <div class="cards">
