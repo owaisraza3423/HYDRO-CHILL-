@@ -13,13 +13,17 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="topbar">"STAY COOL ON EVERY SIP"</div>
     <header>
       <div style="display: flex; align-items: center; gap: 18px">
-        <a href="#"><img src="image/logo.png" alt="" /></a>
+        <a href="#"><img src="image/logo.png" alt="" class="logo" /></a>
         <div style="color: var(--muted); font-size: 14px">
           Cool &nbsp; Purety &nbsp; Freshness
         </div>
@@ -45,23 +49,38 @@
     </header>
 
     <main>
+      <!-- swiper -->
       <section class="hero">
-        <div class="hero-card">
-          <img
-            src="image/504163614_122093376410908929_6649563100597291277_n.jpg"
-            alt="hero"
-          />
-          <div class="hero-content">
-            <h1 class="hero-title">HYDRO COOL WATER COOLER</h1>
-            <p class="hero-sub">
-              Find our best Model Design On Pure Stainless steel body Collection
-              with Fully Copper Condenser
-            </p>
-            <a class="hero-cta" href="#">Shop Now</a>
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide hero-card">
+              <img src="image/504163614_122093376410908929_6649563100597291277_n.jpg" alt="hero1" />
+              <div class="hero-content">
+                <h1 class="hero-title">HYDRO COOL WATER COOLER</h1>
+                <p class="hero-sub">Best Model Design On Stainless Steel Body</p>
+                <a class="hero-cta" href="#">Shop Now</a>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide hero-card">
+              <img src="image/504163614_122093376410908929_6649563100597291277_n.jpg" alt="hero2" />
+              <div class="hero-content">
+                <h1 class="hero-title">PURE & FRESH WATER</h1>
+                <p class="hero-sub">Stay Cool with Our Water Coolers</p>
+                <a class="hero-cta" href="#">Shop Now</a>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
           </div>
+          <!-- Pagination (dots) -->
+          <div class="swiper-pagination"></div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
-
+<!-- swiper end -->
       <section class="section">
         <h2>NEW COLLECTION</h2>
         <div class="cards">
@@ -214,6 +233,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
