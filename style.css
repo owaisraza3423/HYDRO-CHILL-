@@ -80,6 +80,52 @@ nav a {
   background: var(--card)
 }
 
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 24px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.cart-dropdown {
+  display: none; /* hidden initially */
+  position: absolute;
+  right: 20px;
+  top: 100px; /* adjust according to header */
+  width: 260px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.cart-dropdown div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cart-dropdown button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #ff4b4b;
+  font-size: 18px;
+}
+
 /* hero */
 .hero {
   top: 0;
