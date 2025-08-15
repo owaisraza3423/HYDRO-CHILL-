@@ -155,3 +155,19 @@ window.addEventListener("click", function (e) {
     loginDropdown.style.display = "none";
   }
 });
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.sidebar');
+const overlay = document.querySelector('.overlay');
+const body = document.body;
+
+hamburger.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+  overlay.classList.toggle('active');
+  body.classList.toggle('sidebar-open');
+});
+
+overlay.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+  overlay.classList.remove('active');
+  body.classList.remove('sidebar-open');
+});
